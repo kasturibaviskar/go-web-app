@@ -17,3 +17,7 @@ FROM gcr.io/distroless/base
 COPY --from=base /app/kas .
 
 COPY --from=base /app/static ./static
+
+EXPOSE 8080
+
+CMD ["./kas"]
