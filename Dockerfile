@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o /kas .
+RUN go build -o kas .
 
 EXPOSE 8080
 # Final stage - Distroless image
